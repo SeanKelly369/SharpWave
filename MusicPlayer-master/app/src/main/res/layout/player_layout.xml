@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carbon_fibre_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:orientation="vertical">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- Song Title -->
+            "
+
+            <ImageView
+                android:id="@+id/central_disk"
+                android:layout_width="wrap_content"
+                android:layout_height="266dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="32dp"
+                android:layout_gravity="top"
+                app:srcCompat="@drawable/centraldisk" />
+
+            <!-- Rotation logo -->
+
+
+            //circular progressbar
+
+            <com.triggertrap.seekarc.SeekArc
+                android:id="@+id/seekArc"
+
+                android:layout_width="228dp"
+                android:layout_height="228dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="51dp"
+                android:padding="41dp"
+                android:scrollbarThumbHorizontal="@drawable/seek_handler"
+                app:progressColor="@color/default_blue_light"
+                app:arcColor="@color/colorAccent"
+                app:arcWidth="7dp"
+                app:roundEdges="true"
+                app:progressWidth="7dp"
+                app:touchInside="true"
+                app:thumb="@drawable/circularseeker"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.22" />
+
+
+            <!-- Volume seekbar invisible -->
+            <SeekBar
+                android:id="@+id/seekBarVolume"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="230dp"
+                android:layout_height="51dp"
+                android:layout_gravity="top|center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="19dp"
+                android:max="16"
+                android:progress="12" />
+            <!-- add srcCompat to make invisible once linked to a visible arc seekbar-->
+
+
+            <com.marcinmoskala.arcseekbar.ArcSeekBar
+                android:id="@+id/arcSeekBar"
+                android:layout_width="220dp"
+                android:layout_height="76dp"
+                android:layout_gravity="top|center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="21dp"
+                app:thumb="@drawable/thumb2"
+                app:maxProgress="16"
+                app:progress="16"
+                app:progressBackgroundColor="@color/slider_background"
+                app:progressColor="@color/colorAccent"
+                app:progressBackgroundWidth="20dp"
+                app:progressWidth="20dp"
+                app:roundEdges="false" />
+            <!-- 18dp for marginTop -->
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/pointer"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.532"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.262"
+                app:srcCompat="@drawable/pointer" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Current Duration Label -->
+        <TextView
+            android:id="@+id/songCurrentDurationLabel"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="18dp"
+            android:layout_weight="1"
+            android:textSize="2dp"
+            android:textColor="#eeeeee"
+            android:textStyle="bold"/>
+
+        <!-- Shuffle button -->
+        <ImageButton
+            android:id="@+id/btshf"
+            android:layout_width="53dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shuffle"/>
+
+        <Space
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Repeat button -->
+        <ImageButton
+            android:id="@+id/btrep"
+            android:layout_width="55dp"
+            android:layout_height="37dp"
+            android:background="@drawable/repeat"/>
+
+        <TextView
+            android:id="@+id/songTotalDurationLabel"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textSize="2dp"
+            android:textColor="#04cbde"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="0dp">
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <!-- rewind button -->
+            <ImageButton
+                android:id="@+id/btRW"
+                android:layout_width="48dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/rw" />
+
+            <Space
+                android:layout_width="22dp"
+                android:layout_height="11dp"
+                android:layout_weight="1" />
+
+            <!-- Play previous button -->
+            <ImageButton
+                android:id="@+id/playPrev"
+                android:layout_width="36dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/prev" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <!-- Play/pause button -->
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="47dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_play" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="12dp"
+                android:layout_weight="1" />
+
+            <!-- Next button -->
+            <ImageButton
+                android:id="@+id/playNext"
+                android:layout_width="36dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/next" />
+
+            <Space
+                android:layout_width="22dp"
+                android:layout_height="11dp"
+                android:layout_weight="1" />
+
+            <!-- Fast forward button -->
+            <ImageButton
+                android:id="@+id/btFF"
+                android:layout_width="48dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/ff" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center|top"
+        android:background="@layout/round_corner">
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="20dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:text="Welcome to Shark Wave"
+            android:textColor="@color/font_dark"
+            android:textSize="18dp"
+            android:fontFamily="Gotham" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="1dp"
+        android:paddingBottom="3dp"
+        android:gravity="bottom">
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:id="@+id/go_to_eq"
+            android:layout_width="65dp"
+            android:layout_gravity="top"
+            android:layout_height="41dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:background="@drawable/back_btn" />
+
+        <Space
+            android:layout_width="120dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/go_to_pl"
+            android:layout_gravity="top"
+            android:layout_width="65dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:background="@drawable/forward_btn" />
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

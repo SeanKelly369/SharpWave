@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carbon_fibre_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_weight="1">
+
+
+        <ListView
+            android:id="@+id/list_view1"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:cacheColorHint="@android:color/background_light"
+            android:entries="@android:color/background_light"
+            android:foregroundGravity="center"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="23dp"
+            android:scrollbars="vertical"
+            tools:layout_centerHorizontal="true"
+            tools:layout_centerVertical="true" />
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:foregroundGravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingTop="12dp">
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/go_to_playlist_from_equaliser"
+                android:layout_width="70dp"
+                android:layout_height="41dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_btn" />
+
+
+            <Space
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/go_to_equaliser_from_playlist"
+                android:layout_width="70dp"
+                android:layout_height="41dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/forward_btn" />
+
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

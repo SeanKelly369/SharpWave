@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_weight="1">
+
+
+            <ListView
+                android:id="@+id/list_view1"
+                android:layout_width="30dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:cacheColorHint="@android:color/background_light"
+                android:entries="@android:color/background_light"
+                android:scrollbars="vertical"
+                tools:layout_centerHorizontal="true"
+                tools:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </GridLayout>
+
+    <FrameLayout
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center">
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/go_to_player"
+            android:layout_width="70dp"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/back" />
+
+        <Space
+            android:layout_width="120dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/go_to_equaliser2"
+            android:layout_width="70dp"
+            android:layout_height="41dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/forward" />
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="10dp"
+            android:layout_weight="1" />
+
+    </FrameLayout>
+
+</LinearLayout>

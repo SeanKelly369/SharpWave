@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e0631a</color>
+
+    <!-- Colours for arc seekbar -->
+    <color name="slider_background">#c1e7fb</color>
+
+    <color name="light_orange">#ffcaac</color>
+    <color name="middle_orange">#d9dc5709</color>
+    <color name="outer_orange">#58e0631a</color>
+
+    <color name="font_selected">#e77e40</color>
+    <color name="font_dark">#362011</color>
+
+
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Sharpwave</string>
+
+    <string-array name="items">
+        <item>@string/title_activity_simple</item>
+        <item>@string/title_activity_custom</item>
+        <item>@string/title_activity_scrollview</item>
+        <item>@string/title_activity_disabled</item>
+    </string-array>
+
+    <string name="title_activity_simple">SeekArc (default)</string>
+    <string name="title_activity_custom">Custom style</string>
+    <string name="title_activity_scrollview">In scrollview</string>
+    <string name="title_activity_disabled">Disabled (read only)</string>
+    <string name="flat">Flat</string>
+    <string name="bass_boost">Bass boost</string>
+    <string name="enabled">Enabled</string>
+    <string name="about">About...</string>
+    <string name="ok">OK</string>
+    <string name="copyright_message">Simple Equalizer v0.1a, Copyright \u00A92013 Kevin Boone. Feel free to distribute as you see fit.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>
